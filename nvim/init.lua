@@ -12,6 +12,7 @@ Plug('nvim-lua/plenary.nvim')
 Plug('nvim-telescope/telescope.nvim', {['tag'] = '*'})
 
 Plug('folke/trouble.nvim')
+Plug("nvim-tree/nvim-web-devicons")
 
 Plug('nvim-treesitter/nvim-treesitter', {['do'] = ':TSUpdate'})
 
