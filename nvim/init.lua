@@ -6,18 +6,20 @@ local Plug = vim.fn['plug#']
 
 vim.call('plug#begin')
 
-Plug('rose-pine/neovim')
+-- Plug('rose-pine/neovim')
+Plug('catppuccin/nvim')
+Plug('itchyny/lightline.vim')
 
 Plug('nvim-lua/plenary.nvim')
-Plug('nvim-telescope/telescope.nvim', {['tag'] = '*'})
+Plug('nvim-telescope/telescope.nvim', { ['tag'] = '*' })
 
 Plug('folke/trouble.nvim')
 Plug("nvim-tree/nvim-web-devicons")
 
-Plug('nvim-treesitter/nvim-treesitter', {['do'] = ':TSUpdate'})
+Plug('nvim-treesitter/nvim-treesitter', { ['do'] = ':TSUpdate' })
 
 -- LSP
-Plug('VonHeikemen/lsp-zero.nvim', {['branch'] = 'v3.x'})
+Plug('VonHeikemen/lsp-zero.nvim', { ['branch'] = 'v3.x' })
 -- LSP Support
 Plug('neovim/nvim-lspconfig')
 Plug('williamboman/mason.nvim')
@@ -46,6 +48,6 @@ Plug('aliva/vim-fish')
 
 vim.call('plug#end')
 
-vim.cmd.colorscheme('rose-pine')
+vim.cmd.colorscheme('catppuccin-mocha')
 
 vim.cmd.autocmd('FileType scala,sbt lua require("metals").initialize_or_attach({})')
