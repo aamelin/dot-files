@@ -49,5 +49,6 @@ Plug('aliva/vim-fish')
 vim.call('plug#end')
 
 vim.cmd.colorscheme('catppuccin-mocha')
+vim.g.lightline = { colorscheme = 'catppuccin' }
 
 vim.cmd.autocmd('FileType scala,sbt lua require("metals").initialize_or_attach({})')
