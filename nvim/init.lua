@@ -48,6 +48,7 @@ Plug('aliva/vim-fish')
 
 vim.call('plug#end')
 
+--vim.cmd.colorscheme('rose-pine')
 vim.cmd.colorscheme('catppuccin-mocha')
 vim.g.lightline = { colorscheme = 'catppuccin' }
 
