@@ -40,8 +40,6 @@ Plug('rafamadriz/friendly-snippets')
 Plug("mbbill/undotree")
 Plug("tpope/vim-fugitive")
 Plug("nvim-treesitter/nvim-treesitter-context");
-Plug("github/copilot.vim");
-
 
 Plug('scalameta/nvim-metals')
 Plug('aliva/vim-fish')
@@ -53,3 +51,8 @@ vim.cmd.colorscheme('catppuccin-mocha')
 vim.g.lightline = { colorscheme = 'catppuccin' }
 
 vim.cmd.autocmd('FileType scala,sbt lua require("metals").initialize_or_attach({})')
+
+-- highlight copied
+vim.cmd.autocmd(
+    'TextYankPost * silent! lua vim.highlight.on_yank {higroup=\'Visual\', timeout=300}'
+)
